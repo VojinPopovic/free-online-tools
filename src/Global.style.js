@@ -10,6 +10,13 @@ const GlobalStyles = createGlobalStyle`
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  font-family: 'Noto Serif HK', serif;
+ }
+ .active{
+  border: 1px white solid;
+ }
+ li{
+ padding: 5px 10px;
  }
 `;
 
