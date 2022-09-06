@@ -7,18 +7,17 @@ function Home() {
     <>
       <DivSplit color="#ffaf21"></DivSplit>
       <DivSplit right="0"></DivSplit>
-      <DivCenter>
+      <DivCenter width="50vw" height="50vw">
         <DivSplit textColor="#080808" size="7rem">
           <p>Hi,</p>
           <p>I'm</p>
           <p>Vojin</p>
         </DivSplit>
-        <DivSplit size="7rem" right="0">
-        </DivSplit>
       </DivCenter>
-      <Banner>
+      <Banner fontSize="10rem">
         <p>FRONTEND DEV.</p>
       </Banner>
+      
     </>
   );
 }

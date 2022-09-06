@@ -8,22 +8,36 @@ const GlobalStyles = createGlobalStyle`
   border: 0;
   outline: 0;
   font-size: 100%;
-  vertical-align: baseline;
   background: transparent;
-  font-family: 'Noto Serif HK', serif;
+  box-sizing: border-box;
+  overflow: hidden;
+
  }
  .active{
-  border: 1px white solid;
+  outline: 1px white solid;
+  outline-offset: -1px;
+ }
+ ul{
+  overflow: visible;
  }
  li{
- padding: 5px 10px;
+ padding: 5px 20px;
  }
+ body{
+ }
+a {
+  text-decoration: none;
+  color: white;
+}
 `;
 
 const MainDiv = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: #080808;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
 `;
 
 export { GlobalStyles, MainDiv };

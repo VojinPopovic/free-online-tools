@@ -1,34 +1,27 @@
-import { Link } from "react-router-dom";
-import { NavStyle, LogoDivStyle, UnorderedList } from "../styles/Nav.style";
-import { useState, useRef } from "react";
+import NavDesktop from "../NavDesktop";
+import { NavStyle } from "../styles/Nav.style";
+import NavMobile from "../NavMobile";
+import { useState, useEffect } from "react";
 
 function Nav() {
-  const [getActiveEl, setGetActiveEl] = useState("/");
-  function activePage(e) {
-    let activeEl = e.currentTarget;
-    let list = document.querySelectorAll("li")
-    list.forEach(item => item.classList.remove("active"))
-    e.currentTarget.classList.add("active")
+  const [width, setWidth] = useState(window.innerWidth);
+  let breakpoint = 1000;
+
+  useEffect(() => {
+    const handleResizeWindow = () => setWidth(window.innerWidth);
+    window.removeEventListener("resize", handleResizeWindow);
+    window.addEventListener("resize", handleResizeWindow);
+    console.log(width)
+  }, [width]);
+  function renderNav() {
+    if (width > breakpoint) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
-  return (
-    <NavStyle>
-      <LogoDivStyle>
-        <div>LOGO</div>
-      </LogoDivStyle>
-      <UnorderedList>
-        <Link to="/">
-          <li className="active" onClick={activePage}>Home</li>
-        </Link>
-        <Link to="/projects">
-          <li onClick={activePage}>Projects</li>
-        </Link>
-        <Link to="/contact">
-          <li onClick={activePage}>Contact</li>
-        </Link>
-      </UnorderedList>
-    </NavStyle>
-  );
+  return <NavStyle>{renderNav() ? <NavDesktop /> : <NavMobile />}</NavStyle>;
 }
 
 export default Nav;
