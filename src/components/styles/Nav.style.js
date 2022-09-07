@@ -8,6 +8,7 @@ const NavStyle = styled.nav`
   justify-content: space-between;
   align-items: center;
   position: absolute;
+  overflow: visible;
   &:hover {
     background-color: #080808;
   }
@@ -33,7 +34,12 @@ const UnorderedList = styled.ul`
   text-decoration: none;
 `;
 const HamburgerContainer = styled.div`
+  display: ${(props) => props.display};
   margin-right: 5%;
+  & svg {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 export { NavStyle, LogoDivStyle, UnorderedList, HamburgerContainer };

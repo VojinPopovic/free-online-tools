@@ -16,7 +16,19 @@ function NavItems(props) {
     if (props.width < breakpoint) {
       ulRef.current.style.display = "none";
     }
-  }, [props.width]);
+    if (props.hamburger && props.width < breakpoint) {
+      ulRef.current.style.position = "absolute";
+      ulRef.current.style.display = "block";
+      ulRef.current.style.right = "0px";
+      ulRef.current.style.top = "100px";
+    } else if (!props.hamburger && props.width < breakpoint) {
+      ulRef.current.style.display = "none";
+    } else {
+      ulRef.current.style.display = "flex";
+      ulRef.current.style.position = "static";
+    }
+    console.log(props.hamburger);
+  }, [props.width, props.hamburger]);
   return (
     <>
       <LogoDivStyle>
