@@ -22,6 +22,7 @@ const LogoDivStyle = styled.div`
   justify-content: center;
   align-items: center;
   color: white;
+  text-align: center;
 `;
 
 const UnorderedList = styled.ul`

@@ -13,15 +13,15 @@ function NavItems(props) {
 
   useEffect(() => {
     let breakpoint = 1000;
-    if (props.width < breakpoint) {
+    if (props.width <= breakpoint) {
       ulRef.current.style.display = "none";
     }
-    if (props.hamburger && props.width < breakpoint) {
+    if (props.hamburger && props.width <= breakpoint) {
       ulRef.current.style.position = "absolute";
       ulRef.current.style.display = "block";
       ulRef.current.style.right = "0px";
       ulRef.current.style.top = "100px";
-    } else if (!props.hamburger && props.width < breakpoint) {
+    } else if (!props.hamburger && props.width <= breakpoint) {
       ulRef.current.style.display = "none";
     } else {
       ulRef.current.style.display = "flex";
