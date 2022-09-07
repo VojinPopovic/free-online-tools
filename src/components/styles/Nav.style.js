@@ -32,5 +32,8 @@ const UnorderedList = styled.ul`
   align-items: center;
   text-decoration: none;
 `;
+const HamburgerContainer = styled.div`
+  margin-right: 5%;
+`;
 
-export { NavStyle, LogoDivStyle, UnorderedList };
+export { NavStyle, LogoDivStyle, UnorderedList, HamburgerContainer };

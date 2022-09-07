@@ -11,7 +11,6 @@ function Nav() {
     const handleResizeWindow = () => setWidth(window.innerWidth);
     window.removeEventListener("resize", handleResizeWindow);
     window.addEventListener("resize", handleResizeWindow);
-    console.log(width)
   }, [width]);
   function renderNav() {
     if (width > breakpoint) {
@@ -21,7 +20,7 @@ function Nav() {
     }
   }
 
-  return <NavStyle>{renderNav() ? <NavDesktop /> : <NavMobile />}</NavStyle>;
+  return <NavStyle>{renderNav() ? <NavDesktop /> : <NavMobile width={width} />}</NavStyle>;
 }
 
 export default Nav;
