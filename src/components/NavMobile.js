@@ -20,7 +20,7 @@ function NavMobile(props) {
 
   return (
     <>
-      <NavItems width={props.width} hamburger={hamburger}></NavItems>
+      <NavItems width={props.width} hamburger={hamburger} mt="50px"></NavItems>
       <HamburgerContainer
         display="block"
         onClick={hamburgerDisplay}

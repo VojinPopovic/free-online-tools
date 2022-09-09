@@ -27,14 +27,13 @@ function NavItems(props) {
       ulRef.current.style.display = "flex";
       ulRef.current.style.position = "static";
     }
-    console.log(props.hamburger);
   }, [props.width, props.hamburger]);
   return (
     <>
       <LogoDivStyle>
         <div>LOGO</div>
       </LogoDivStyle>
-      <UnorderedList ref={ulRef}>
+      <UnorderedList ref={ulRef} mt={props.mt}>
         <Link to="/">
           <li className="active" onClick={activePage}>
             Home

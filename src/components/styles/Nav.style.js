@@ -9,9 +9,6 @@ const NavStyle = styled.nav`
   align-items: center;
   position: absolute;
   overflow: visible;
-  &:hover {
-    background-color: #080808;
-  }
   z-index: 20;
 `;
 
@@ -32,7 +29,12 @@ const UnorderedList = styled.ul`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  align-content: center;
   text-decoration: none;
+  text-align: center;
+  & li {
+    margin-top: ${(props) => props.mt};
+  }
 `;
 const HamburgerContainer = styled.div`
   display: ${(props) => props.display};

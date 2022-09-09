@@ -5,14 +5,13 @@ const FormContact = styled.form`
   height: 100%;
   color: #1aa14a;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
   align-items: center;
   background-color: #080808;
   & div {
     width: 80%;
     height: auto;
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,12 +32,18 @@ const FormContact = styled.form`
       height: 100px;
       border: 2px #1aa14a solid;
     }
-    @media (max-width: 1200px){
+    & button {
+      width: 40%;
+      height: 40px;
+      border: 2px #1aa14a solid;
+      color: #1aa14a;
+    }
+    @media (max-width: 1200px) {
+      font-size: 1rem;
+      & label {
         font-size: 1rem;
-        & label{
-            font-size: 1rem;
-        }
-    };
+      }
+    }
   }
 `;
 

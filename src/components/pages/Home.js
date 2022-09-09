@@ -7,8 +7,8 @@ function Home() {
     <>
       <DivSplit color="#ffaf21"></DivSplit>
       <DivSplit right="0"></DivSplit>
-      <DivCenter width="50vw" height="50vw">
-        <DivSplit textColor="#080808" size="7rem">
+      <DivCenter width="50vw" height="40vw">
+        <DivSplit textColor="#080808" size="7rem" alignItems="flex-start" justify="center">
           <p>Hi,</p>
           <p>I'm</p>
           <p>Vojin</p>
@@ -17,7 +17,6 @@ function Home() {
       <Banner fontSize="10rem">
         <p>FRONTEND DEV.</p>
       </Banner>
-      
     </>
   );
 }
