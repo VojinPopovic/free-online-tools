@@ -1,7 +1,9 @@
 import Home from "./components/pages/Home";
 import Nav from "./components/pages/Nav";
 import Contact from "./components/pages/Contact";
-import Projects from "./components/pages/Projects";
+import ProjectsReact from "./components/pages/ProjectsReact";
+import ProjectsJS from "./components/pages/ProjectsJS";
+import ArrowDown from "./components/ArrowDown";
 import { GlobalStyles, MainDiv } from "./Global.style";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ContactIconsContainer } from "./components/styles/ContactIconsContainer.style";
@@ -15,8 +17,10 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects" element={<ProjectsReact />} />
+          <Route path="/projectsjs" element={<ProjectsJS />} />
         </Routes>
+      <ArrowDown />
       </Router>
       <ContactIconsContainer>
         <div className="svg-container">

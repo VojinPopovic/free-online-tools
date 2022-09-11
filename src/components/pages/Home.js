@@ -8,6 +8,7 @@ function Home() {
       <DivSplit color="#ffaf21"></DivSplit>
       <DivSplit right="0"></DivSplit>
       <DivCenter width="50vw" height="40vw">
+        {/* prettier-ignore */}
         <DivSplit textColor="#080808" size="7rem" alignItems="flex-start" justify="center">
           <p>Hi,</p>
           <p>I'm</p>

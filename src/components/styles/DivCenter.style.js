@@ -15,6 +15,12 @@ const DivCenter = styled.div`
   color: ${(props) => props.color};
   z-index: 1;
   display: flex;
+  border-radius: ${props => props.borderRadius};
+  & button{
+    width: 200px;
+    height: 200px;
+    background-color: white;
+  }
   @media (min-width: 1400px) {
     width: ${(props) => props.maxWidth};
     height: ${(props) => props.maxHeight};

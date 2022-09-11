@@ -38,6 +38,18 @@ const MainDiv = styled.div`
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  & .next-page {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 2%;
+    & svg {
+      width: 100%;
+      height: 66%;
+    }
+  }
 `;
 
 export { GlobalStyles, MainDiv };
