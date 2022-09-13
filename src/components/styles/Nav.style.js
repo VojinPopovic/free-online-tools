@@ -16,10 +16,10 @@ const LogoDivStyle = styled.div`
   width: 30%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   color: white;
-  text-align: center;
+  margin-left: 3%;
 `;
 
 const UnorderedList = styled.ul`

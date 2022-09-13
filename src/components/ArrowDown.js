@@ -4,11 +4,13 @@ function ArrowDown() {
   const navigate = useNavigate();
   function nextPage() {
     let currentPage = document.location.href;
-    if(currentPage.includes("projects")){
-      return "/projectsjs"
+    if (currentPage.includes("projects")) {
+      return "/projectsjs";
+    } else if (currentPage.slice(-1) === "/") {
+      return "/about"
     }
   }
-  let project = nextPage()
+  let project = nextPage();
 
   return (
     <button onClick={() => navigate(project)} className="next-page">

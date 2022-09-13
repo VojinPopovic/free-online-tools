@@ -19,7 +19,6 @@ const DivCenter = styled.div`
   & button{
     width: 200px;
     height: 200px;
-    background-color: white;
   }
   @media (min-width: 1400px) {
     width: ${(props) => props.maxWidth};

@@ -3,6 +3,7 @@ import Nav from "./components/pages/Nav";
 import Contact from "./components/pages/Contact";
 import ProjectsReact from "./components/pages/ProjectsReact";
 import ProjectsJS from "./components/pages/ProjectsJS";
+import About from "./components/pages/About";
 import ArrowDown from "./components/ArrowDown";
 import { GlobalStyles, MainDiv } from "./Global.style";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -19,6 +20,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<ProjectsReact />} />
           <Route path="/projectsjs" element={<ProjectsJS />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       <ArrowDown />
       </Router>

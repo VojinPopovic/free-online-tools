@@ -3,14 +3,12 @@ import { DivCenter } from "../styles/DivCenter.style";
 import Form from "../Form";
 
 function Contact() {
-  const background = ``;
   return (
     <>
       <DivSplit color="#1aa14a" fontSize="5rem"></DivSplit>
       <DivSplit right="0"></DivSplit>
       <DivCenter
         color="#080808"
-        background={background}
         width="100vw"
         height="40vw"
       >
