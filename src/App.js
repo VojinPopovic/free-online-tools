@@ -18,8 +18,8 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<ProjectsReact />} />
-          <Route path="/projectsjs" element={<ProjectsJS />} />
+          <Route path="/projects" exact element={<ProjectsReact />} />
+          <Route path="/js" exact element={<ProjectsJS />} />
           <Route path="/about" element={<About />} />
         </Routes>
       <ArrowDown />
