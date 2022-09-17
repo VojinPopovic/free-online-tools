@@ -17,24 +17,16 @@ const Banner = styled.div`
   pointer-events: none;
   z-index: ${(props) => props.zIndex};
   letter-spacing: 20px;
+  text-align: center;
   & p {
     color: transparent;
     -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
     font-family: "Times New Roman", Times, serif;
     white-space: nowrap;
-    @media (max-width: 1400px) {
-      font-size: 8rem;
-    }
+    font-size: clamp(2rem, ${(props) => props.growth}, 9rem);
     @media (max-width: 1200px) {
-      font-size: 7rem;
-    }
-    @media (max-width: 950px) {
-      font-size: 6rem;
-      white-space: normal;
-    }
-    @media (max-width: 950px) {
-      font-size: 5.5rem;
-      white-space: normal;
+      white-space: break-word;
+      letter-spacing: ${(props) => props.ls};
     }
   }
 `;

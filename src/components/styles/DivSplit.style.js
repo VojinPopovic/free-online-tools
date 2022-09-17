@@ -34,25 +34,21 @@ const DivSplit = styled.div`
     width: 100%;
     height: 100%;
   }
-  & .about-description-container{
-    width: 100%;
-    height: 100%;
+  & .home-title {
+    width: 80%;
+    font-size: clamp(2rem, 6vw, 6rem);
+  }
+  & .about-description-container {
+    text-align: start;
     color: #985c42;
-    font-size: 1.1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    & p {
-      width: 80%;
+    font-size: clamp(0.4rem, 1vw, 2rem);
+    margin: auto 10%;
+    @media (max-width:1000px){
+    font-size: clamp(0.4rem, 1.5vw, 2rem);
+
     }
   }
-  
-  @media (max-width: 1400px) {
-    font-size: 5.5rem;
-  }
-  @media (max-width: 1200px) {
-    font-size: 4.5rem;
-  }
+
 `;
 
 export { DivSplit };

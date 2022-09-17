@@ -24,6 +24,10 @@ const DivCenter = styled.div`
     width: ${(props) => props.maxWidth};
     height: ${(props) => props.maxHeight};
   }
+  @media (max-width: ${props=> props.screenWidth}) {
+    width: ${(props) => props.minWidth};
+    height: ${(props) => props.minHeight};
+  }
 `;
 
 export { DivCenter };

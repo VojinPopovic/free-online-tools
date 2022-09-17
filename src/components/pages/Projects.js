@@ -16,8 +16,8 @@ function Projects(props) {
         height="40vw"
         borderRadius={props.borderRadius}
       ></DivCenter>
-      <Banner zIndex="2" fontSize="12rem">
-        <p fontSize="14rem">{props.banner}</p>
+      <Banner zIndex="2" growth="15vw" ls="10px">
+        <p>{props.banner}</p>
       </Banner>
     </>
   );
