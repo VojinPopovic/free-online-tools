@@ -3,20 +3,19 @@ import styled from "styled-components";
 const Banner = styled.div`
   position: absolute;
   width: 90%;
-  height: 40%;
+  height: auto;
   font-size: ${(props) => props.fontSize};
   color: white;
-  top: 0;
-  bottom: 0;
+  top: ${props => props.top};
+  bottom: ${props => props.bottom};
   right: 0;
   left: 0;
   margin: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
-  pointer-events: none;
+  align-items: ${props => props.alignItems};
   z-index: ${(props) => props.zIndex};
-  letter-spacing: 20px;
+  letter-spacing: 5px;
   text-align: center;
   & p {
     color: transparent;

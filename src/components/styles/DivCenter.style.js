@@ -16,7 +16,8 @@ const DivCenter = styled.div`
   z-index: 1;
   display: flex;
   border-radius: ${props => props.borderRadius};
-  & button{
+  overflow: visible;
+  & .next-page{
     width: 200px;
     height: 200px;
   }

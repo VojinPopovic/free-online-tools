@@ -1,10 +1,10 @@
 import Home from "./components/pages/Home";
 import Nav from "./components/pages/Nav";
 import Contact from "./components/pages/Contact";
-import ProjectsReact from "./components/pages/ProjectsReact";
-import ProjectsJS from "./components/pages/ProjectsJS";
+import Projects from "./components/pages/Projects";
 import About from "./components/pages/About";
 import ArrowDown from "./components/ArrowDown";
+import UnitConverter from "./components/pages/UnitConverter";
 import { GlobalStyles, MainDiv } from "./Global.style";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ContactIconsContainer } from "./components/styles/ContactIconsContainer.style";
@@ -18,11 +18,11 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" exact element={<ProjectsReact />} />
-          <Route path="/js" exact element={<ProjectsJS />} />
+          <Route path="/projects" exact element={<Projects />} />
           <Route path="/about" element={<About />} />
+          <Route path="/unitconverter" element={<UnitConverter />} />
         </Routes>
-      <ArrowDown />
+        <ArrowDown />
       </Router>
       <ContactIconsContainer>
         <div className="svg-container">
