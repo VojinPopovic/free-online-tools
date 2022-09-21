@@ -5,7 +5,6 @@ function ArrowDown() {
   let currentPage = document.location.href;
   const navigate = useNavigate();
   function nextPage() {
-    console.log(currentPage);
     if (currentPage.slice(-1) === "/") {
       return "/about";
     } else if (

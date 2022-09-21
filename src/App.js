@@ -1,10 +1,9 @@
 import Home from "./components/pages/Home";
 import Nav from "./components/pages/Nav";
 import Contact from "./components/pages/Contact";
-import Projects from "./components/pages/Projects";
+import Tools from "./components/pages/Tools";
 import About from "./components/pages/About";
 import ArrowDown from "./components/ArrowDown";
-import UnitConverter from "./components/pages/UnitConverter";
 import { GlobalStyles, MainDiv } from "./Global.style";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ContactIconsContainer } from "./components/styles/ContactIconsContainer.style";
@@ -18,9 +17,8 @@ function App() {
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" exact element={<Projects />} />
+          <Route path="/tools" exact element={<Tools />} />
           <Route path="/about" element={<About />} />
-          <Route path="/unitconverter" element={<UnitConverter />} />
         </Routes>
         <ArrowDown />
       </Router>

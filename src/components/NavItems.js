@@ -35,12 +35,10 @@ function NavItems(props) {
       </LogoDivStyle>
       <UnorderedList ref={ulRef} mt={props.mt}>
         <Link to="/">
-          <li className="active" onClick={activePage}>
-            Home
-          </li>
+          <li className="active" onClick={activePage}> Home </li>
         </Link>
-        <Link to="/projects">
-          <li onClick={activePage}>Projects</li>
+        <Link to="/tools">
+          <li onClick={activePage}>Tools</li>
         </Link>
         <Link to="/contact">
           <li onClick={activePage}>Contact</li>
