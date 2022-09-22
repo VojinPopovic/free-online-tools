@@ -23,14 +23,6 @@ const DivCenter = styled.div`
     width: 200px;
     height: 200px;
   }
-  & .unit-converter-container, .calculator-container {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    background-color: white;
-    border-radius: ${(props) => props.borderRadius};
-  }
   @media (min-width: 1400px) {
     width: ${(props) => props.maxWidth};
     height: ${(props) => props.maxHeight};

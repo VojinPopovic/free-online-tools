@@ -1,5 +1,5 @@
 import NavItems from "./NavItems";
-import { HamburgerContainer } from "./styles/Nav.style";
+import { HamburgerContainer } from "../styles/Nav.style";
 import { useRef, useState } from "react";
 
 function NavMobile(props) {

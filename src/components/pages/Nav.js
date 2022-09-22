@@ -1,6 +1,6 @@
-import NavDesktop from "../NavDesktop";
+import NavDesktop from "../nav/NavDesktop";
 import { NavStyle } from "../styles/Nav.style";
-import NavMobile from "../NavMobile";
+import NavMobile from "../nav/NavMobile";
 import { useState, useEffect } from "react";
 
 function Nav() {

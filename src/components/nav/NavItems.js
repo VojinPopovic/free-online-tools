@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import { LogoDivStyle, UnorderedList } from "./styles/Nav.style";
+import { LogoDivStyle, UnorderedList } from "../styles/Nav.style";
 
 function NavItems(props) {
   let ulRef = useRef();
