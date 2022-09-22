@@ -23,8 +23,8 @@ const DivCenter = styled.div`
     width: 200px;
     height: 200px;
   }
-  & .unit-converter-container {
-    width: 0%;
+  & .unit-converter-container, .calculator-container {
+    width: 100%;
     height: 100%;
     position: absolute;
     right: 0;
