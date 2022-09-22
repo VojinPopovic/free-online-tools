@@ -16,7 +16,6 @@ function Projects() {
   const bannerRef = useRef()
 
   useEffect(() => {
-    console.log(counter);
     if (ifZero) {
       switch (counter) {
         case 1:
