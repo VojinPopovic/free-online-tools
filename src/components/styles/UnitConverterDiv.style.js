@@ -15,8 +15,10 @@ const FormDiv = styled.div`
   width: 60%;
   height: 80%;
   display: flex;
-  align-items: center;
-  & .main-selection {
+  flex-direction: column;
+  justify-content: space-evenly;
+  & .main-selection,
+  input {
     width: 100%;
     height: 50px;
     color: white;

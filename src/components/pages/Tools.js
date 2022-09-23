@@ -50,7 +50,7 @@ function Projects() {
       <DivSplit left="0"></DivSplit>
       <DivSplit color={color} right="0"></DivSplit>
       {/* prettier-ignore */}
-      <DivCenter maxWidth="500px" maxHeight="500px" backgroundColor="#080808" background={background} width="80vw" height="80vw" borderRadius="10%">
+      <DivCenter maxWidth="500px" maxHeight="500px" backgroundColor="#080808" background={background} width="70vw" height="70vw" borderRadius="10%">
         {rendered}
         <Button left="0" color={color} onClick={toolRenderLeft}>
           {/* prettier-ignore */}

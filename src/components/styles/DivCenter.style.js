@@ -23,7 +23,7 @@ const DivCenter = styled.div`
     width: 200px;
     height: 200px;
   }
-  @media (min-width: 1400px) {
+  @media (min-width: 900px) {
     width: ${(props) => props.maxWidth};
     height: ${(props) => props.maxHeight};
   }

@@ -16,8 +16,8 @@ function UnitConverter() {
     <>
       <UnitConverterDiv className="unit-converter-container">
         <FormDiv>
-          <ConvertInterface apiObject={apiObject} />
           <MainSelection setApi={setApi} />
+          <ConvertInterface apiObject={apiObject} />
         </FormDiv>
       </UnitConverterDiv>
     </>
