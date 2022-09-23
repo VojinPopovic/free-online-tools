@@ -1,3 +1,9 @@
+import {
+  UnitSelectionsDiv,
+  ResultDiv,
+  InputDiv,
+} from "../../styles/UnitConverterDiv.style";
+
 function ConvertInterface(props) {
   let keys = Object.keys(props.apiObject);
   function getInputValue(e) {
@@ -6,25 +12,28 @@ function ConvertInterface(props) {
 
   return (
     <>
-      <div className="input-container">
-        <input onKeyDown={getInputValue} type="text" placeholder="Value"  />
-      </div>
-      <div className="units-selection-container">
-        <select defaultValue={"DEFAULT"} className="main-selection">
+      <InputDiv>
+        <input onKeyDown={getInputValue} type="number" placeholder="Value" />
+      </InputDiv>
+      <UnitSelectionsDiv>
+        <select defaultValue={"DEFAULT"} className="unit-selection margin">
           {keys.map((key) => (
             <option value={key} key={Math.random()}>
               {key}
             </option>
           ))}
         </select>
-        <select defaultValue={"DEFAULT"} className="main-selection">
+        <select defaultValue={"DEFAULT"} className="unit-selection">
           {keys.map((key) => (
             <option value={key} key={Math.random()}>
               {key}
             </option>
           ))}
         </select>
-      </div>
+      </UnitSelectionsDiv>
+      <ResultDiv>
+        <p>fasfasfas</p>
+      </ResultDiv>
     </>
   );
 }

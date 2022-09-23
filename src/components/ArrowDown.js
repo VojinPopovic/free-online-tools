@@ -8,7 +8,7 @@ function ArrowDown() {
     if (currentPage.slice(-1) === "/") {
       return "/about";
     } else if (
-      currentPage.includes("/projects") ||
+      currentPage.includes("/tools") ||
       currentPage.includes("/contact") ||
       currentPage.includes("/about")
     ) {
