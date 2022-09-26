@@ -3,36 +3,54 @@ import {
   ResultDiv,
   InputDiv,
 } from "../../styles/UnitConverterDiv.style";
+import { useEffect } from "react";
 
 function ConvertInterface(props) {
   let keys = Object.keys(props.apiObject);
   function getInputValue(e) {
-    console.log(e.target.value);
+    props.setInput(e.target.value);
   }
+
+  function getOptionValueOne(e) {
+    props.setOptionOne(e.target.value);
+  }
+  function getOptionValueTwo(e) {
+    props.setOptionTwo("ratio" + e.target.value);
+  }
+  let i = 0;
 
   return (
     <>
       <InputDiv>
-        <input onKeyDown={getInputValue} type="number" placeholder="Value" />
+        <input onKeyDown={getInputValue} type="number" placeholder="Enter value" />
       </InputDiv>
       <UnitSelectionsDiv>
-        <select defaultValue={"DEFAULT"} className="unit-selection margin">
+        {/*prettier-ignore*/}
+        <select onChange={getOptionValueOne} defaultValue={"DEFAULT"} className="unit-selection margin" name="unitsone" id="unitsone">
+        <option value="DEFAULT" disabled hidden>
+          Select the unit 
+        </option>
           {keys.map((key) => (
-            <option value={key} key={Math.random()}>
+            <option value={key} key={i++}>
               {key}
             </option>
           ))}
         </select>
-        <select defaultValue={"DEFAULT"} className="unit-selection">
-          {keys.map((key) => (
-            <option value={key} key={Math.random()}>
-              {key}
+        {/*prettier-ignore*/}
+        <select onChange={getOptionValueTwo} defaultValue={"DEFAULT"}  className="unit-selection" name="unitstwo" id="unitstwo">
+        <option value="DEFAULT" disabled hidden>
+          Select the unit 
+        </option>
+          {keys.map((keyd) => (
+            <option value={keyd} key={i++}>
+              {keyd}
             </option>
           ))}
         </select>
       </UnitSelectionsDiv>
       <ResultDiv>
-        <p>fasfasfas</p>
+        <button type="submit">Convert</button>
+        <p>{props.result}</p>
       </ResultDiv>
     </>
   );

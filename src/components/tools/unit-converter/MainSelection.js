@@ -8,7 +8,7 @@ function MainSelection(props) {
   return (
     <>
       {/*prettier-ignore*/}
-      <select onChange={selection} defaultValue={"DEFAULT"} className="main-selection" >
+      <select onChange={selection} defaultValue={"DEFAULT"} className="main-selection" name="main-selection" id="main-selectionf">
         <option value="DEFAULT" disabled hidden>
           Select what to convert
         </option>

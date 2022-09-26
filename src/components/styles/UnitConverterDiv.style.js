@@ -11,7 +11,7 @@ const UnitConverterDiv = styled.div`
   align-items: center;
 `;
 
-const FormDiv = styled.div`
+const FormDiv = styled.form`
   width: 60%;
   height: 80%;
   display: flex;
@@ -26,7 +26,6 @@ const FormDiv = styled.div`
     border: 3px #fcba04 solid;
     border-radius: 10px;
     text-align: center;
-    
 
     & option {
       background-color: #080808;
@@ -49,7 +48,6 @@ const UnitSelectionsDiv = styled.div`
     border: 3px #fcba04 solid;
     border-radius: 10px;
     text-align: center;
-    
   }
   & option {
     background-color: #080808;
@@ -66,13 +64,25 @@ const InputDiv = styled.div`
 `;
 
 const ResultDiv = styled.div`
-  width: 90%;
+  width: 100%;
   height: 15%;
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: space-between;
+
   & p {
+    height: 80%;
     border-bottom: 3px #fcba04 solid;
     font-size: 1.2rem;
+    width: 60%;
+  }
+  & button {
+    width: 30%;
+    height: 80%;
+    border: 3px #fcba04 solid;
+    border-radius: 10px;
+    color: white;
   }
 `;
 
