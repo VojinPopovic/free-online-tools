@@ -4,7 +4,7 @@ import ConvertInterface from "./ConvertInterface";
 import { useState, useEffect } from "react";
 
 function UnitConverter() {
-  const [api, setApi] = useState("length");
+  const [api, setApi] = useState();
   const [apiObject, setApiObject] = useState({});
   const [input, setInput] = useState();
   const [optionOne, setOptionOne] = useState();
@@ -23,13 +23,17 @@ function UnitConverter() {
     if (
       optionTwo !== undefined &&
       optionOne !== undefined &&
-      apiObject !== undefined 
-    ) {
-      ratio = apiObject[optionOne][optionTwo];
-      let results = ratio * input 
-      console.log(ratio, input)
-      setResult(results);
-    }
+      apiObject !== undefined
+    )
+      if ("ratio" + optionOne === optionTwo) {
+        ratio = 1;
+        let results = ratio * input;
+        setResult(results);
+      } else {
+        ratio = apiObject[optionOne][optionTwo];
+        let results = ratio * input;
+        setResult(results);
+      }
   }
 
   console.log(optionOne, optionTwo, result);
@@ -41,8 +45,7 @@ function UnitConverter() {
           <ConvertInterface
             apiObject={apiObject}
             api={api}
-            optionOne={optionOne}
-            optionTwo={optionTwo}
+            input={input}
             setOptionOne={setOptionOne}
             setOptionTwo={setOptionTwo}
             setInput={setInput}

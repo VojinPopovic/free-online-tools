@@ -3,12 +3,12 @@ import {
   ResultDiv,
   InputDiv,
 } from "../../styles/UnitConverterDiv.style";
-import { useEffect } from "react";
 
 function ConvertInterface(props) {
   let keys = Object.keys(props.apiObject);
-  function getInputValue(e) {
-    props.setInput(e.target.value);
+
+  function inputHandler(e){
+    props.setInput(e.target.value)
   }
 
   function getOptionValueOne(e) {
@@ -22,7 +22,7 @@ function ConvertInterface(props) {
   return (
     <>
       <InputDiv>
-        <input onKeyDown={getInputValue} type="number" placeholder="Enter value" />
+        <input  type="number" onKeyUp={inputHandler} placeholder="Enter value" />
       </InputDiv>
       <UnitSelectionsDiv>
         {/*prettier-ignore*/}
