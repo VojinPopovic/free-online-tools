@@ -25,15 +25,16 @@ function UnitConverter() {
       optionOne !== undefined &&
       apiObject !== undefined
     )
-      if ("ratio" + optionOne === optionTwo) {
-        ratio = 1;
-        let results = ratio * input;
-        setResult(results);
-      } else {
-        ratio = apiObject[optionOne][optionTwo];
-        let results = ratio * input;
-        setResult(results);
-      }
+      console.log(optionOne, optionTwo);
+    if ("ratio" + optionOne.toLowerCase().replace(/ /g, "") === optionTwo) {
+      ratio = 1;
+      let results = ratio * input;
+      setResult(results);
+    } else {
+      ratio = apiObject[optionOne][optionTwo];
+      let results = ratio * input;
+      setResult(results);
+    }
   }
 
   console.log(optionOne, optionTwo, result);

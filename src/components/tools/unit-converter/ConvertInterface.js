@@ -7,22 +7,24 @@ import {
 function ConvertInterface(props) {
   let keys = Object.keys(props.apiObject);
 
-  function inputHandler(e){
-    props.setInput(e.target.value)
+  function inputHandler(e) {
+    props.setInput(e.target.value);
   }
 
   function getOptionValueOne(e) {
     props.setOptionOne(e.target.value);
   }
   function getOptionValueTwo(e) {
-    props.setOptionTwo("ratio" + e.target.value);
+    props.setOptionTwo(
+      "ratio" + e.target.value.toLowerCase().replace(/ /g, "")
+    );
   }
   let i = 0;
 
   return (
     <>
       <InputDiv>
-        <input  type="number" onKeyUp={inputHandler} placeholder="Enter value" />
+        <input type="number" onKeyUp={inputHandler} placeholder="Enter value" />
       </InputDiv>
       <UnitSelectionsDiv>
         {/*prettier-ignore*/}

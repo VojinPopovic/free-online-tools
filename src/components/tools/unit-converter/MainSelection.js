@@ -12,11 +12,11 @@ function MainSelection(props) {
         <option value="DEFAULT" disabled hidden>
           Select what to convert
         </option>
-        <option value="length">length</option>
-        <option value="area">area</option>
-        <option value="volume">volume</option>
-        <option value="weight">weight</option>
-        <option value="time">time</option>
+        <option value="Length">Length</option>
+        <option value="Area">Area</option>
+        <option value="Volume">Volume</option>
+        <option value="Weight">Weight</option>
+        <option value="Time">Time</option>
       </select>
     </>
   );
