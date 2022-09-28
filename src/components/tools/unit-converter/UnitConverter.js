@@ -42,10 +42,11 @@ function UnitConverter() {
     <>
       <UnitConverterDiv className="unit-converter-container">
         <FormDiv onSubmit={submitHandler}>
-          <MainSelection setApi={setApi} />
+          <MainSelection
+            setApi={setApi}
+          />
           <ConvertInterface
             apiObject={apiObject}
-            api={api}
             input={input}
             setOptionOne={setOptionOne}
             setOptionTwo={setOptionTwo}

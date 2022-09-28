@@ -14,6 +14,7 @@ function MainSelection(props) {
         </option>
         <option value="Length">Length</option>
         <option value="Area">Area</option>
+        <option value="Temperature">Temperature</option>
         <option value="Volume">Volume</option>
         <option value="Weight">Weight</option>
         <option value="Time">Time</option>

@@ -19,7 +19,6 @@ function ConvertInterface(props) {
       "ratio" + e.target.value.toLowerCase().replace(/ /g, "")
     );
   }
-  let i = 0;
 
   return (
     <>
@@ -29,23 +28,23 @@ function ConvertInterface(props) {
       <UnitSelectionsDiv>
         {/*prettier-ignore*/}
         <select onChange={getOptionValueOne} defaultValue={"DEFAULT"} className="unit-selection margin" name="unitsone" id="unitsone">
-        <option value="DEFAULT" disabled hidden>
+        <option value="DEFAULT" hidden>
           Select the unit 
         </option>
           {keys.map((key) => (
-            <option value={key} key={i++}>
+            <option value={key} key={key}>
               {key}
             </option>
           ))}
         </select>
         {/*prettier-ignore*/}
         <select onChange={getOptionValueTwo} defaultValue={"DEFAULT"}  className="unit-selection" name="unitstwo" id="unitstwo">
-        <option value="DEFAULT" disabled hidden>
+        <option value="DEFAULT" hidden>
           Select the unit 
         </option>
-          {keys.map((keyd) => (
-            <option value={keyd} key={i++}>
-              {keyd}
+          {keys.map((key) => (
+            <option value={key} key={key}>
+              {key}
             </option>
           ))}
         </select>
