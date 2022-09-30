@@ -16,6 +16,7 @@ const GlobalStyles = createGlobalStyle`
  .active{
   outline: 1px white solid;
   outline-offset: -1px;
+  border-radius: clamp(0px, 1vw, 5px);
  }
  ul{
   overflow: visible;
@@ -38,6 +39,7 @@ const MainDiv = styled.div`
   display: flex;
   justify-content: space-between;
   overflow: hidden;
+  z-index: 1;
   & .next-page {
     width: 50px;
     height: 50px;

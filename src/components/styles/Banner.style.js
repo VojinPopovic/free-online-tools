@@ -22,7 +22,7 @@ const Banner = styled.div`
     -webkit-text-stroke: 1px rgba(255, 255, 255, 1);
     font-family: "Times New Roman", Times, serif;
     white-space: nowrap;
-    font-size: clamp(2rem, ${(props) => props.growth}, 9rem);
+    font-size: clamp(0.5rem, ${(props) => props.growth}, 9rem);
     @media (max-width: 1200px) {
       white-space: break-word;
       letter-spacing: ${(props) => props.ls};

@@ -76,8 +76,12 @@ const ResultDiv = styled.div`
   & p {
     height: 80%;
     border-bottom: 3px #fcba04 solid;
-    font-size: 1.2rem;
+    font-size: clamp(0.5rem, 2vw, 1.2rem);
     width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 5%;
   }
   & button {
     width: 30%;

@@ -12,11 +12,11 @@ const DivSplit = styled.div`
   flex-direction: column;
   justify-content: ${(props) => props.justify};
   align-items: ${(props) => props.alignItems};
-  pointer-events: none;
   font-family: "Noto Serif HK", serif;
   overflow: visible;
   border: ${(props) => props.borderSize + props.borderColor} solid;
   border-left: none;
+  position: relative;
   & .contact-container {
     width: auto;
     height: auto;
@@ -43,12 +43,10 @@ const DivSplit = styled.div`
     color: #985c42;
     font-size: clamp(0.4rem, 1vw, 2rem);
     margin: auto 10%;
-    @media (max-width:1000px){
-    font-size: clamp(0.4rem, 1.5vw, 2rem);
-
+    @media (max-width: 1000px) {
+      font-size: clamp(0.4rem, 1.5vw, 2rem);
     }
   }
-
 `;
 
 export { DivSplit };

@@ -47,24 +47,25 @@ function Projects() {
 
   return (
     <>
-      <DivSplit left="0"></DivSplit>
+      <DivSplit left="0">
+        <Banner bottom="7vh" growth="3vw" className="projects-banner">
+          <p ref={bannerRef}>SELECT TOOL</p>
+        </Banner>
+      </DivSplit>
       <DivSplit color={color} right="0"></DivSplit>
       {/* prettier-ignore */}
       <DivCenter maxWidth="500px" maxHeight="500px" backgroundColor="#080808" background={background} width="70vw" height="70vw" borderRadius="10%">
         {rendered}
-        <Button left="0" color={color} onClick={toolRenderLeft}>
+        <Button left="2%" color={color} onClick={toolRenderLeft}>
           {/* prettier-ignore */}
-          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" fillRule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm11.5 5.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/></svg>
         </Button>
-        <Button right="0" color={color} onClick={toolRenderRight}>
+        <Button right="2%" color={color} onClick={toolRenderRight}>
           {/* prettier-ignore */}
-          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg>
-        </Button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="currentColor" fillRule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm4.5 5.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/></svg>
+        </Button> 
       </DivCenter>
       {/* prettier-ignore */}
-      <Banner bottom="7vh" alignItems="flex-end" zIndex="1" growth="10vw" ls="1px" className="projects-banner">
-        <p ref={bannerRef}>SELECT THE TOOL</p>
-      </Banner>
     </>
   );
 }

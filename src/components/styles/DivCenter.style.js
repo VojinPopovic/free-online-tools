@@ -11,7 +11,7 @@ const DivCenter = styled.div`
   margin: auto;
   background-color: ${(props) => props.backgroundColor};
   background-image: ${(props) => props.background};
-  background-size: 70% 70%;
+  background-size: 50% 50%;
   background-repeat: no-repeat;
   background-position: center;
   color: ${(props) => props.color};
