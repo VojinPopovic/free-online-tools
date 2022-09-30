@@ -11,6 +11,8 @@ function Contact() {
         color="#080808"
         width="100vw"
         height="40vw"
+        screenWidth="900px"
+        minHeight="50%"
       >
         <DivSplit size="1rem" alignItems="flex-start" justify="center">
           <div className="contact-container">
