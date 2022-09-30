@@ -12,9 +12,11 @@ function UnitConverter() {
   const [result, setResult] = useState();
 
   useEffect(() => {
-    fetch(`https://unit-converter-api.herokuapp.com/${api}`)
-      .then((response) => response.json())
-      .then((data) => setApiObject(data));
+    if (api !== undefined) {
+      fetch(`https://unit-converter-api.herokuapp.com/${api}`)
+        .then((response) => response.json())
+        .then((data) => setApiObject(data));
+    }
   }, [api]);
 
   function submitHandler(e) {
@@ -30,20 +32,21 @@ function UnitConverter() {
       ratio = 1;
       let results = ratio * input;
       setResult(results);
+    } else if (input === undefined) {
+      setResult("Enter Value")
     } else {
       ratio = apiObject[optionOne][optionTwo];
       let results = ratio * input;
       setResult(results);
     }
+    console.log(input)
   }
 
   return (
     <>
       <UnitConverterDiv className="unit-converter-container">
         <FormDiv onSubmit={submitHandler}>
-          <MainSelection
-            setApi={setApi}
-          />
+          <MainSelection setApi={setApi} />
           <ConvertInterface
             apiObject={apiObject}
             input={input}

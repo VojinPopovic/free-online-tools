@@ -23,11 +23,11 @@ function ConvertInterface(props) {
   return (
     <>
       <InputDiv>
-        <input type="number" onKeyUp={inputHandler} placeholder="Enter value" />
+        <input type="number" onKeyUp={inputHandler} placeholder="Enter value" className="border" />
       </InputDiv>
       <UnitSelectionsDiv>
         {/*prettier-ignore*/}
-        <select onChange={getOptionValueOne} defaultValue={"DEFAULT"} className="unit-selection margin" name="unitsone" id="unitsone">
+        <select onChange={getOptionValueOne} defaultValue={"DEFAULT"} className="unit-selection margin border" name="unitsone" id="unitsone">
         <option value="DEFAULT" hidden>
           Select the unit 
         </option>
@@ -38,7 +38,7 @@ function ConvertInterface(props) {
           ))}
         </select>
         {/*prettier-ignore*/}
-        <select onChange={getOptionValueTwo} defaultValue={"DEFAULT"}  className="unit-selection" name="unitstwo" id="unitstwo">
+        <select onChange={getOptionValueTwo} defaultValue={"DEFAULT"}  className="unit-selection border" name="unitstwo" id="unitstwo">
         <option value="DEFAULT" hidden>
           Select the unit 
         </option>
@@ -50,7 +50,7 @@ function ConvertInterface(props) {
         </select>
       </UnitSelectionsDiv>
       <ResultDiv>
-        <button type="submit">Convert</button>
+        <button type="submit" className="border">Convert</button>
         <p>{props.result}</p>
       </ResultDiv>
     </>

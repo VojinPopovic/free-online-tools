@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Button = styled.button`
-  width: clamp(40px, 3vw, 100px);
+  width: clamp(20px, 6vw, 60px);
   border: none;
   position: absolute;
   top: 0;

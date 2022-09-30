@@ -13,18 +13,18 @@ function Projects() {
   const [counter, setCounter] = useState(0);
   const [ifZero, setIfZero] = useState(false);
   const [rendered, setRendered] = useState();
-  const bannerRef = useRef()
+  const bannerRef = useRef();
 
   useEffect(() => {
     if (ifZero) {
       switch (counter) {
         case 1:
           setRendered(<UnitConverter />);
-          bannerRef.current.innerText = "UNIT CONVERTER"
+          bannerRef.current.innerText = "UNIT CONVERTER";
           break;
         case 2:
           setRendered(<Calculator />);
-          bannerRef.current.innerText = "CALCULATOR"
+          bannerRef.current.innerText = "CALCULATOR";
           break;
         default:
           if (counter > 2) {

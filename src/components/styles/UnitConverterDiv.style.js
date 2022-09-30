@@ -9,22 +9,25 @@ const UnitConverterDiv = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  & .border {
+    border-radius: clamp(0px, 2vw, 10px);
+  }
 `;
 
 const FormDiv = styled.form`
   width: 60%;
-  height: 80%;
+  height: 92%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  font-size: clamp(0.5rem, 2vw, 1rem);
   & .main-selection,
   input {
     width: 100%;
     height: 15%;
     color: white;
     border: 3px #fcba04 solid;
-    border-radius: 10px;
     text-align: center;
 
     & option {
@@ -46,7 +49,6 @@ const UnitSelectionsDiv = styled.div`
     height: 100%;
     color: white;
     border: 3px #fcba04 solid;
-    border-radius: 10px;
     text-align: center;
   }
   & option {
@@ -81,7 +83,6 @@ const ResultDiv = styled.div`
     width: 30%;
     height: 80%;
     border: 3px #fcba04 solid;
-    border-radius: 10px;
     color: white;
   }
 `;
