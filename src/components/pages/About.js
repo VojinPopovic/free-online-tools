@@ -1,7 +1,6 @@
 import { DivSplit } from "../styles/DivSplit.style";
 import { DivCenter } from "../styles/DivCenter.style";
 import myImage from "../assets/me.png";
-import { Banner } from "../styles/Banner.style";
 
 function About() {
   const background = `url('../assets/me.png')`;
@@ -33,9 +32,6 @@ function About() {
           </div>
         </DivSplit>
       </DivCenter>
-      <Banner growth="9vw" ls="20px" zIndex="2">
-        <p>ABOUT ME</p>
-      </Banner>
     </>
   );
 }

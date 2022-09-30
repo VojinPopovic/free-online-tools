@@ -1,15 +1,27 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { LogoDivStyle, UnorderedList } from "../styles/Nav.style";
 
 function NavItems(props) {
   let ulRef = useRef();
+  const [active, setActive] = useState();
 
   function activePage(e) {
-    let list = document.querySelectorAll("li");
-    list.forEach((item) => item.classList.remove("active"));
-    e.currentTarget.classList.add("active");
+    setActive(e.currentTarget);
   }
+
+  useEffect(() => {
+    let list = document.querySelectorAll("li");
+    let href = document.location.href 
+    list.forEach((item) => {
+      item.classList.remove("active");
+      if (href.includes(item.innerText.toLowerCase())) {
+        item.classList.add("active");
+      } else if (item.innerText === "Home" && href.slice(-1) === "/") {
+        item.classList.add("active");
+      }
+    });
+  }, [active]);
 
   useEffect(() => {
     let breakpoint = 1000;
@@ -35,13 +47,19 @@ function NavItems(props) {
       </LogoDivStyle>
       <UnorderedList ref={ulRef} mt={props.mt}>
         <Link to="/">
-          <li className="active" onClick={activePage}> Home </li>
+          <li className="home" onClick={activePage}>
+            Home
+          </li>
         </Link>
         <Link to="/tools">
-          <li onClick={activePage}>Tools</li>
+          <li className="tools" onClick={activePage}>
+            Tools
+          </li>
         </Link>
         <Link to="/contact">
-          <li onClick={activePage}>Contact</li>
+          <li className="contact" onClick={activePage}>
+            Contact
+          </li>
         </Link>
       </UnorderedList>
     </>

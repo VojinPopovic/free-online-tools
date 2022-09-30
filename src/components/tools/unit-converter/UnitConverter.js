@@ -37,7 +37,6 @@ function UnitConverter() {
     }
   }
 
-  console.log(optionOne, optionTwo, result);
   return (
     <>
       <UnitConverterDiv className="unit-converter-container">
