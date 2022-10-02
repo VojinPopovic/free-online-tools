@@ -18,16 +18,17 @@ const DivSplit = styled.div`
   border-left: none;
   position: relative;
   & .contact-container {
-    width: auto;
+    width: 95%;
     height: auto;
     margin-bottom: 30px;
-    margin-left: 5%;
+    margin-inline: 5%;
+
   }
   & h2 {
-    font-size: 1.5rem;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
   }
   & .contact {
-    font-size: 1.2rem;
+    font-size: clamp(0.8rem, 2vw, 1rem);
     margin-bottom: 20px;
   }
   & .my-image {

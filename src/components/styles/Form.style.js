@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const FormContact = styled.form`
   width: 100%;
-  height: 100%;
+  height: 90%;
   color: #1aa14a;
   display: flex;
   justify-content: space-evenly;
@@ -20,17 +20,19 @@ const FormContact = styled.form`
       width: auto;
       height: auto;
       text-align: start;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
     & input {
       width: 100%;
       height: 40px;
       border: 2px #1aa14a solid;
+    color: white;
     }
     & textarea {
       width: 100%;
       height: 100px;
       border: 2px #1aa14a solid;
+      color: white;
     }
     & button {
       width: 40%;

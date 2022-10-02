@@ -20,6 +20,13 @@ const LogoDivStyle = styled.div`
   align-items: center;
   color: white;
   margin-left: 3%;
+  & .logo-container {
+    height: 40%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+;
 `;
 
 const UnorderedList = styled.ul`

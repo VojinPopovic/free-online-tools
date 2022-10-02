@@ -31,7 +31,7 @@ function Contact() {
             </p>
           </div>
         </DivSplit>
-        <DivSplit color="#1aa14a" fontSize="5rem">
+        <DivSplit fontSize="5rem">
           <Form></Form>
         </DivSplit>
       </DivCenter>

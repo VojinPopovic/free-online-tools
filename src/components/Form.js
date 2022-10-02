@@ -1,7 +1,4 @@
-import React from "react";
-
 import { FormContact } from "./styles/Form.style";
-function inputHandler() {}
 
 function Form() {
   return (
@@ -14,9 +11,8 @@ function Form() {
           type="name"
           name="name"
           className="form-control"
-          value={""}
-          onChange={inputHandler}
           id="name"
+          placeholder="John Johnson"
         />
       </div>
       <div>
@@ -25,8 +21,6 @@ function Form() {
         </label>
         <input
           type="email"
-          value={""}
-          onChange={inputHandler}
           name="email"
           className="form-control"
           id="email"
@@ -39,8 +33,6 @@ function Form() {
         </label>
         <textarea
           name="message"
-          value={""}
-          onChange={inputHandler}
           className="form-control"
           id="message"
         ></textarea>

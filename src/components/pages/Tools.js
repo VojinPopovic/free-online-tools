@@ -49,7 +49,7 @@ function Projects() {
     <>
       <DivSplit left="0">
         <Banner bottom="7vh" growth="3vw" className="projects-banner">
-          <p ref={bannerRef}>SELECT TOOL</p>
+          <p ref={bannerRef}>SELECT THE TOOL</p>
         </Banner>
       </DivSplit>
       <DivSplit color={color} right="0"></DivSplit>
