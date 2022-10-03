@@ -4,23 +4,26 @@ import Contact from "./components/pages/Contact";
 import Tools from "./components/pages/Tools";
 import About from "./components/pages/About";
 import ArrowDown from "./components/ArrowDown";
+import { useState } from "react";
 import { GlobalStyles, MainDiv } from "./Global.style";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ContactIconsContainer } from "./components/styles/ContactIconsContainer.style";
 
 function App() {
+  const [active, setActive] = useState();
+
   return (
     <MainDiv>
       <GlobalStyles />
       <Router>
-        <Nav />
+        <Nav active={active} setActive={setActive} />
         <Routes>
           <Route path="/" exact element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/tools" exact element={<Tools />} />
           <Route path="/about" element={<About />} />
         </Routes>
-        <ArrowDown />
+        <ArrowDown active={active} setActive={setActive}/>
       </Router>
       <ContactIconsContainer>
         <div className="svg-container">

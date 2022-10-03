@@ -1,19 +1,18 @@
 import { DivSplit } from "../styles/DivSplit.style";
 import { DivCenter } from "../styles/DivCenter.style";
+import { Banner } from "../styles/Banner.style";
 import Form from "../Form";
 
 function Contact() {
   return (
     <>
       <DivSplit color="#1aa14a" fontSize="5rem"></DivSplit>
-      <DivSplit right="0"></DivSplit>
-      <DivCenter
-        color="#080808"
-        width="100vw"
-        height="40vw"
-        screenWidth="900px"
-        minHeight="50%"
-      >
+      <DivSplit right="0">
+        <Banner top="10vh" growth="10vw" className="projects-banner" justify="flex-end" zIndex="2">
+          <p>03</p>
+        </Banner>
+      </DivSplit>
+      <DivCenter color="#080808" width="80vw" height="35vw" screenWidth="900px" minHeight="50%">
         <DivSplit size="1rem" alignItems="flex-start" justify="center">
           <div className="contact-container">
             <h2>Contact me</h2>

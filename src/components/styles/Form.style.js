@@ -10,7 +10,7 @@ const FormContact = styled.form`
   align-items: center;
   background-color: #080808;
   & div {
-    width: 80%;
+    width: 75%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@ const FormContact = styled.form`
       width: 100%;
       height: 40px;
       border: 2px #1aa14a solid;
-    color: white;
+      color: white;
     }
     & textarea {
       width: 100%;

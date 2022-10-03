@@ -6,7 +6,11 @@ function Home() {
   return (
     <>
       <DivSplit color="#EF626C"></DivSplit>
-      <DivSplit right="0"></DivSplit>
+      <DivSplit right="0">
+        <Banner top="10vh" growth="10vw" className="projects-banner" justify="flex-end">
+          <p>01</p>
+        </Banner>
+      </DivSplit>
       <DivCenter width="45vw" height="40vw" minWidth="55vw" screenWidth="500px">
         {/* prettier-ignore */}
         <DivSplit textColor="#080808" alignItems="flex-start" justify="center">
@@ -15,7 +19,7 @@ function Home() {
           <p className="home-title">Tools</p>
         </DivSplit>
       </DivCenter>
-      <Banner growth="8vw" ls="1px" top="0" bottom="0" alignItems="center">
+      <Banner growth="8vw" ls="1px" top="0" bottom="0" justify="center" alignItems="center">
         <p>FREE ONLINE TOOLS</p>
       </Banner>
     </>

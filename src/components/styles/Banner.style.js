@@ -12,7 +12,7 @@ const Banner = styled.div`
   left: 0;
   margin: auto;
   display: flex;
-  justify-content: center;
+  justify-content: ${props => props.justify};
   align-items: ${props => props.alignItems};
   z-index: ${(props) => props.zIndex};
   letter-spacing: 5px;

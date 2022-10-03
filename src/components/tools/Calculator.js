@@ -1,7 +1,7 @@
 import { UnitConverterDiv } from "../styles/UnitConverterDiv.style";
 
 function Calculator() {
-  return <UnitConverterDiv></UnitConverterDiv>;
+  return <UnitConverterDiv>Calculator</UnitConverterDiv>;
 }
 
 export default Calculator;

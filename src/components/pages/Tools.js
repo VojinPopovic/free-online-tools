@@ -47,12 +47,16 @@ function Projects() {
 
   return (
     <>
-      <DivSplit left="0">
-        <Banner bottom="7vh" growth="3vw" className="projects-banner">
+      <DivSplit left="0" color={color}>
+        <Banner bottom="7vh" growth="3vw" className="projects-banner" justify="center">
           <p ref={bannerRef}>SELECT THE TOOL</p>
         </Banner>
       </DivSplit>
-      <DivSplit color={color} right="0"></DivSplit>
+      <DivSplit  right="0">
+        <Banner top="10vh" growth="10vw" className="projects-banner" justify="flex-end">
+          <p>02</p>
+        </Banner>
+      </DivSplit>
       {/* prettier-ignore */}
       <DivCenter maxWidth="500px" maxHeight="500px" backgroundColor="#080808" background={background} width="70vw" height="70vw" borderRadius="10%">
         {rendered}

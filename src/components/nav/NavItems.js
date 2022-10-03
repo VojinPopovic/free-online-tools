@@ -1,13 +1,12 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { LogoDivStyle, UnorderedList } from "../styles/Nav.style";
 
 function NavItems(props) {
   let ulRef = useRef();
-  const [active, setActive] = useState();
 
   function activePage(e) {
-    setActive(e.currentTarget);
+    props.setActive(e.currentTarget);
   }
 
   useEffect(() => {
@@ -21,7 +20,7 @@ function NavItems(props) {
         item.classList.add("active");
       }
     });
-  }, [active]);
+  }, [props.active]);
 
   useEffect(() => {
     let breakpoint = 1000;
@@ -62,6 +61,11 @@ function NavItems(props) {
         <Link to="/contact">
           <li className="contact" onClick={activePage}>
             Contact
+          </li>
+        </Link>
+        <Link to="/about">
+          <li className="about" onClick={activePage}>
+           About 
           </li>
         </Link>
       </UnorderedList>

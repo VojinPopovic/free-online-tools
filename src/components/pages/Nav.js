@@ -3,7 +3,7 @@ import { NavStyle } from "../styles/Nav.style";
 import NavMobile from "../nav/NavMobile";
 import { useState, useEffect } from "react";
 
-function Nav() {
+function Nav(props) {
   const [width, setWidth] = useState(window.innerWidth);
   let breakpoint = 1000;
 
@@ -20,7 +20,19 @@ function Nav() {
     }
   }
 
-  return <NavStyle>{renderNav() ? <NavDesktop /> : <NavMobile width={width} />}</NavStyle>;
+  return (
+    <NavStyle>
+      {renderNav() ? (
+        <NavDesktop active={props.active} setActive={props.setActive} />
+      ) : (
+        <NavMobile
+          width={width}
+          active={props.active}
+          setActive={props.setActive}
+        />
+      )}
+    </NavStyle>
+  );
 }
 
 export default Nav;

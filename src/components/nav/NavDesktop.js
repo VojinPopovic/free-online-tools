@@ -1,9 +1,9 @@
 import NavItems from "./NavItems";
 
-function NavDesktop() {
+function NavDesktop(props) {
   return (
     <>
-      <NavItems></NavItems>
+      <NavItems active={props.active} setActive={props.setActive}></NavItems>
     </>
   );
 }
