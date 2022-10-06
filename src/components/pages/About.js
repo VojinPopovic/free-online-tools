@@ -1,5 +1,6 @@
 import { DivSplit } from "../styles/DivSplit.style";
 import { DivCenter } from "../styles/DivCenter.style";
+import { Banner } from "../styles/Banner.style";
 import myImage from "../assets/me.png";
 
 function About() {
@@ -7,7 +8,11 @@ function About() {
   return (
     <>
       <DivSplit color="#985c42" fontSize="5rem"></DivSplit>
-      <DivSplit right="0"></DivSplit>
+      <DivSplit right="0">
+        <Banner top="10vh" growth="10vw" className="projects-banner" justify="flex-end">
+          <p>04</p>
+        </Banner>
+      </DivSplit>
       <DivCenter
         color="#080808"
         background={background}

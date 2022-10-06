@@ -5,7 +5,6 @@ const Banner = styled.div`
   width: 90%;
   height: auto;
   font-size: ${(props) => props.fontSize};
-  color: white;
   top: ${props => props.top};
   bottom: ${props => props.bottom};
   right: 0;
