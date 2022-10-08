@@ -1,17 +1,29 @@
 import { UnitConverterDiv } from "../../styles/UnitConverterDiv.style";
 import { CalcBody } from "../../styles/calculator-styles/CalcBody.style";
 import Display from "./Display";
-import Buttons from "./Buttons";
+import DisplayUpdater from "./DisplayUpdater";
+import { useState, useEffect } from "react";
 
 function Calculator() {
+  const [display, setDisplay] = useState("");
+  const [value, setValue] = useState("");
+
+  useEffect(() => {
+    setDisplay((prev) => prev + value);
+  }, [value]);
+
   return (
     <UnitConverterDiv>
-      <CalcBody>
+      <CalcBody className="border">
         <div className="display-container">
-          <Display></Display>
+          <Display display={display} value={value} />
         </div>
         <div className="buttons-container">
-          <Buttons></Buttons>
+          <DisplayUpdater
+            display={display}
+            setDisplay={setDisplay}
+            setValue={setValue}
+          />
         </div>
       </CalcBody>
     </UnitConverterDiv>

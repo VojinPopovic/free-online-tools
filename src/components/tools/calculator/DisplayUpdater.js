@@ -1,7 +1,12 @@
-function DisplayUpdater() {
+import Buttons from "./Buttons";
+
+function DisplayUpdater(props) {
+
   return (
-    <div>DisplayUpdater</div>
-  )
+    <>
+      <Buttons value={props.value} setValue={props.setValue}></Buttons>
+    </>
+  );
 }
 
-export default DisplayUpdater
+export default DisplayUpdater;

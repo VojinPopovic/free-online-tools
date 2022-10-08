@@ -24,6 +24,7 @@ const ButtonGroup = styled.div`
   height: 100%;
   display: flex;
   justify-content: center;
+  gap: 5%;
   margin-bottom: clamp(0.5rem, 1vw, 1.2rem);
 `;
 

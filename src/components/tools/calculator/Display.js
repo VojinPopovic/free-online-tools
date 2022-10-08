@@ -1,6 +1,6 @@
-function Display() {
+function Display(props) {
   return (
-    <div></div>
+    <div>{props.display}</div>
   )
 }
 
