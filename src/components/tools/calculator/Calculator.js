@@ -2,15 +2,14 @@ import { UnitConverterDiv } from "../../styles/UnitConverterDiv.style";
 import { CalcBody } from "../../styles/calculator-styles/CalcBody.style";
 import Display from "./Display";
 import DisplayUpdater from "./DisplayUpdater";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 function Calculator() {
   const [display, setDisplay] = useState("");
   const [value, setValue] = useState("");
 
-  useEffect(() => {
-    setDisplay((prev) => prev + value);
-  }, [value]);
+  let symbols = ["%", "/", "*", "-", "+", "="];
+  let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "+-"];
 
   return (
     <UnitConverterDiv>
@@ -23,6 +22,7 @@ function Calculator() {
             display={display}
             setDisplay={setDisplay}
             setValue={setValue}
+            value={value}
           />
         </div>
       </CalcBody>

@@ -1,11 +1,12 @@
 import { StyledButton } from "../../styles/calculator-styles/Button.style";
 
 function Button(props) {
-  function calculate() {
-    props.setValue(props.value)
+  let display = props.propsOb.display;
+  let setDisplay = props.propsOb.setDisplay;
 
-    let symbols = ["%", "/", "*", "-", "+", "="];
-    let numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ".", "+-"];
+  function calculate() {
+    props.propsOb.setValue(props.value);
+    setDisplay(display + props.value);
   }
 
   let classes = "button rounded-3 " + props.className;
