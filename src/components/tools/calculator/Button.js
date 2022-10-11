@@ -5,16 +5,20 @@ function Button(props) {
   let setDisplay = props.propsOb.setDisplay;
 
   function calculate() {
-    let symbols = ["%", "/", "*", "-", "+", "=", ".", "c"];
+    let symbols = ["%", "/", "*", "-", "+", ".", "="];
     if (display === "" && symbols.includes(props.value)) {
-      console.log("cao");
-    } else if (
-      symbols.includes(display.slice(-1)) &&
-      symbols.includes(props.value)
-    ) {
-      console.log("necao");
+      alert("Can't use operator at the start of the expression");
     } else if (props.value === "c") {
       setDisplay("");
+    } else if (props.value === "=") {
+      let evaluation = display;
+      evaluation.replace(/[^-()\d/*+.]/g, "");
+      setDisplay(eval(evaluation));
+    } else if (
+      symbols.includes(props.value) &&
+      symbols.includes(display.toString().slice(-1))
+    ) {
+      alert("Can't use 2 operators in a row");
     } else {
       props.propsOb.setValue(props.value);
       setDisplay(display + props.value);
