@@ -5,8 +5,20 @@ function Button(props) {
   let setDisplay = props.propsOb.setDisplay;
 
   function calculate() {
-    props.propsOb.setValue(props.value);
-    setDisplay(display + props.value);
+    let symbols = ["%", "/", "*", "-", "+", "=", ".", "c"];
+    if (display === "" && symbols.includes(props.value)) {
+      console.log("cao");
+    } else if (
+      symbols.includes(display.slice(-1)) &&
+      symbols.includes(props.value)
+    ) {
+      console.log("necao");
+    } else if (props.value === "c") {
+      setDisplay("");
+    } else {
+      props.propsOb.setValue(props.value);
+      setDisplay(display + props.value);
+    }
   }
 
   let classes = "button rounded-3 " + props.className;
