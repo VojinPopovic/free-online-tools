@@ -24,7 +24,7 @@ function Buttons(props) {
         </Button>
         <Button value="/" propsOb={propsOb}>
           {/* prettier-ignore */}
-          <div><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><g fill="#7b67f2"><path d="M5 11a1 1 0 1 1 0-2h10a1 1 0 1 1 0 2H5Z"/><circle cx="10" cy="5.5" r="1.5"/><circle cx="10" cy="14.5" r="1.5"/></g></svg></div>
+          <div><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><g fill="white"><path d="M5 11a1 1 0 1 1 0-2h10a1 1 0 1 1 0 2H5Z"/><circle cx="10" cy="5.5" r="1.5"/><circle cx="10" cy="14.5" r="1.5"/></g></svg></div>
         </Button>
       </ButtonGroup>
       <ButtonGroup>
@@ -42,7 +42,7 @@ function Buttons(props) {
         </Button>
         <Button value="*" propsOb={propsOb}>
           {/* prettier-ignore */}
-          <div><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="#7b67f2" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8L4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></div>
+          <div><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><path fill="white" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8L4.646 5.354a.5.5 0 0 1 0-.708z"/></svg></div>
         </Button>
       </ButtonGroup>
       <ButtonGroup>
@@ -60,7 +60,7 @@ function Buttons(props) {
         </Button>
         <Button value="-" propsOb={propsOb}>
           {/* prettier-ignore */}
-          <div><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="#7b67f2" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14"/></svg></div>
+          <div><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" stroke="white" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 12h14"/></svg></div>
         </Button>
       </ButtonGroup>
       <ButtonGroup>
@@ -78,7 +78,7 @@ function Buttons(props) {
         </Button>
         <Button value="+" propsOb={propsOb}>
           {/* prettier-ignore */}
-          <div><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="#7b67f2" strokeLinecap="round" strokeWidth="2" d="M12 20v-8m0 0V4m0 8h8m-8 0H4"/></svg></div>
+          <div><svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" stroke="white" strokeLinecap="round" strokeWidth="2" d="M12 20v-8m0 0V4m0 8h8m-8 0H4"/></svg></div>
         </Button>
       </ButtonGroup>
       <ButtonGroup>

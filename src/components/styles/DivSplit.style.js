@@ -21,8 +21,7 @@ const DivSplit = styled.div`
     width: 95%;
     height: auto;
     margin-bottom: 30px;
-    margin-inline: 5%;
-
+    margin-right: 10%;
   }
   & h2 {
     font-size: clamp(1.2rem, 2vw, 1.5rem);

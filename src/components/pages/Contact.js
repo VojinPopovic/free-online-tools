@@ -12,7 +12,7 @@ function Contact() {
           <p>03</p>
         </Banner>
       </DivSplit>
-      <DivCenter color="#080808" width="80vw" height="35vw" screenWidth="900px" minHeight="50%">
+      <DivCenter color="#080808" width="80vw" height="40vw" screenWidth="900px" minHeight="50%">
         <DivSplit size="1rem" alignItems="flex-start" justify="center">
           <div className="contact-container">
             <h2>Contact me</h2>

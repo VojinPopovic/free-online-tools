@@ -27,7 +27,6 @@ function UnitConverter() {
       optionOne !== undefined &&
       apiObject !== undefined
     )
-      console.log(optionOne, optionTwo);
     if ("ratio" + optionOne.toLowerCase().replace(/ /g, "") === optionTwo) {
       ratio = 1;
       let results = ratio * input;
@@ -39,7 +38,6 @@ function UnitConverter() {
       let results = ratio * input;
       setResult(results);
     }
-    console.log(input)
   }
 
   return (

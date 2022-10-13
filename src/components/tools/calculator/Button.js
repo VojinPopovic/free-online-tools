@@ -1,4 +1,6 @@
+/* eslint no-eval: 0 */
 import { StyledButton } from "../../styles/calculator-styles/Button.style";
+
 
 function Button(props) {
   let display = props.propsOb.display;

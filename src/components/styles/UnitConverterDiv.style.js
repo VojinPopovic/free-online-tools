@@ -10,7 +10,7 @@ const UnitConverterDiv = styled.div`
   justify-content: center;
   align-items: center;
   & .border {
-    border-radius: clamp(0px, 2vw, 10px);
+    border-radius: clamp(0.5px, 2vw, 10px);
   }
 `;
 

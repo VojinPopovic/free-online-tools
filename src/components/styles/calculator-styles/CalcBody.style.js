@@ -28,4 +28,21 @@ const ButtonGroup = styled.div`
   margin-bottom: clamp(0.5rem, 1vw, 1.2rem);
 `;
 
-export { CalcBody, ButtonGroup };
+const DisplayStyle = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  & p {
+    width: 95%;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    font-size: clamp(0.7rem, 3vw, 1.5rem);
+  }
+`;
+
+export { CalcBody, ButtonGroup, DisplayStyle };

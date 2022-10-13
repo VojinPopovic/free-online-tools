@@ -16,6 +16,12 @@ const FormContact = styled.form`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    & .form-control{
+      border: 2px #1aa14a solid;
+      border-radius: clamp(0.5px, 2vw, 10px);
+      color: white;
+
+    }
     & label {
       width: auto;
       height: auto;
@@ -25,19 +31,14 @@ const FormContact = styled.form`
     & input {
       width: 100%;
       height: 40px;
-      border: 2px #1aa14a solid;
-      color: white;
     }
     & textarea {
       width: 100%;
       height: 100px;
-      border: 2px #1aa14a solid;
-      color: white;
     }
-    & button {
+    & .submit-btn{
       width: 40%;
       height: 40px;
-      border: 2px #1aa14a solid;
       color: #1aa14a;
     }
     @media (max-width: 1200px) {
