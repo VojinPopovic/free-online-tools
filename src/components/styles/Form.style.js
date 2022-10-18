@@ -16,11 +16,10 @@ const FormContact = styled.form`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    & .form-control{
+    & .form-control {
       border: 2px #1aa14a solid;
       border-radius: clamp(0.5px, 2vw, 10px);
       color: white;
-
     }
     & label {
       width: auto;
@@ -32,11 +31,15 @@ const FormContact = styled.form`
       width: 100%;
       height: 40px;
     }
+    & input::placeholder {
+      text-align: center;
+      font-size: clamp(0.5rem, 2.5vw, 1rem);
+    }
     & textarea {
       width: 100%;
       height: 100px;
     }
-    & .submit-btn{
+    & .submit-btn {
       width: 40%;
       height: 40px;
       color: #1aa14a;

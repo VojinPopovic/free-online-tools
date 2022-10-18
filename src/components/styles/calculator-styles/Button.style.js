@@ -7,10 +7,20 @@ const StyledButton = styled.div`
   outline: 2px #fcba04 solid;
   outline-offset: -2px;
   text-align: center;
-  border-radius: clamp(0px, 1.5vw, 10px);
+  border-radius: clamp(1px, 1.5vw, 10px);
   display: flex;
   justify-content: center;
   align-items: center;
+  & svg,
+  p {
+    height: 50%;
+  }
+  & p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.2rem, 2vw, 1rem);
+  }
 `;
 
 export { StyledButton };

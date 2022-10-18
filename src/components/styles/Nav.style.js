@@ -26,30 +26,48 @@ const LogoDivStyle = styled.div`
     justify-content: flex-start;
     align-items: center;
   }
-;
 `;
 
 const UnorderedList = styled.ul`
-  width: 30%;
-  height: 100%;
+  width: ${(props) => props.ulWidth};
+  height: ${(props) => props.ulHeight};
   list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: center;
   text-decoration: none;
   text-align: center;
+  display: flex;
+  flex-direction: ${(props) => props.fDirection};
+  justify-content: space-around;
+  align-items: center;
   & li {
     margin-top: ${(props) => props.mt};
   }
 `;
 const HamburgerContainer = styled.div`
   display: ${(props) => props.display};
+  position: ${(props) => props.hamPosition};
   margin-right: 5%;
+  right: 0;
+  top: 25px;
   & svg {
     width: 40px;
     height: 40px;
   }
 `;
 
-export { NavStyle, LogoDivStyle, UnorderedList, HamburgerContainer };
+const UlContainer = styled.div`
+  width: 50vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: ${props => props.bColor};
+`;
+
+export {
+  NavStyle,
+  LogoDivStyle,
+  UnorderedList,
+  HamburgerContainer,
+  UlContainer,
+};
