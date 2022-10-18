@@ -50,7 +50,7 @@ function NavMobile(props) {
           hamburger={hamburger}
           active={props.active}
           setActive={props.setActive}
-          ulWidth="50%"
+          ulWidth="100%"
           ulHeight="40%"
           fDirection="column"
         ></NavItems>

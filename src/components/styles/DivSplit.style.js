@@ -15,12 +15,12 @@ const DivSplit = styled.div`
   font-family: "Noto Serif HK", serif;
   overflow: visible;
   border: ${(props) => props.borderSize + props.borderColor} solid;
-  border-left: none;
   position: relative;
   & .contact-container {
     width: 95%;
     height: auto;
     margin-bottom: 30px;
+    margin-left: 5%;
     margin-right: 10%;
   }
   & h2 {

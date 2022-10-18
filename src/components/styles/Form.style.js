@@ -28,16 +28,22 @@ const FormContact = styled.form`
       font-size: 1.2rem;
     }
     & input {
-      width: 100%;
+      width: 70%;
       height: 40px;
+      @media (max-width: 1200px) {
+        width: 100%;
+      }
     }
     & input::placeholder {
       text-align: center;
       font-size: clamp(0.5rem, 2.5vw, 1rem);
     }
     & textarea {
-      width: 100%;
+      width: 70%;
       height: 100px;
+      @media (max-width: 1200px) {
+        width: 100%;
+      }
     }
     & .submit-btn {
       width: 40%;

@@ -8,7 +8,7 @@ function Form() {
           Name
         </label>
         <input
-          type="name"
+          type="text"
           name="name"
           className="form-control"
           id="name"

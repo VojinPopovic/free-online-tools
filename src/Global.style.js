@@ -22,7 +22,7 @@ const GlobalStyles = createGlobalStyle`
   overflow: visible;
  }
  li{
- padding: 5px 20px;
+ padding: 8px 25px;
  }
  body{
  }

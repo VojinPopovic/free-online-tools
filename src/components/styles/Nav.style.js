@@ -36,11 +36,8 @@ const UnorderedList = styled.ul`
   text-align: center;
   display: flex;
   flex-direction: ${(props) => props.fDirection};
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  & li {
-    margin-top: ${(props) => props.mt};
-  }
 `;
 const HamburgerContainer = styled.div`
   display: ${(props) => props.display};
@@ -61,7 +58,7 @@ const UlContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: ${props => props.bColor};
+  background-color: ${(props) => props.bColor};
 `;
 
 export {
