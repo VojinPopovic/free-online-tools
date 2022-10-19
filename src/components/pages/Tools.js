@@ -7,8 +7,8 @@ import UnitConverter from "../tools/unit-converter/UnitConverter";
 import Calculator from "../tools/calculator/Calculator";
 
 function Projects() {
-  let background = `url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64"%3E%3Cpath fill="%2394989b" d="m20.9 50.9l30-30c3.5.8 7.3-.1 10-2.8c2.7-2.7 3.6-6.5 2.8-10L55 16.7l-6.1-1.6L47.3 9L56 .3c-3.5-.8-7.3.1-10 2.8c-2.7 2.7-3.6 6.5-2.8 10l-30 30c-3.5-.8-7.3.1-10 2.8C-1 50-1 56.8 3.1 60.9c4.1 4.1 10.9 4.1 15 0c2.7-2.7 3.6-6.5 2.8-10m-8.7 8.6l-6.1-1.6l-1.6-6.1L9 47.3l6.1 1.6l1.6 6.1l-4.5 4.5"%2F%3E%3Cpath fill="%233e4347" d="m28.8 21.9l-5.6 5.8l-5.5-5.7l5.5-5.8z"%2F%3E%3Cpath fill="%2394989b" d="M16.7 5.1L6.9 15.2c-.4.4-.4 1 0 1.3l3.7 3.8l3.7 3.8c.4.4.9.4 1.3 0L25.4 14c.4-.4.4-1 0-1.3L18 5.1c-.3-.4-.9-.4-1.3 0M.3 22c-.4.4-.4 1 0 1.3L7.6 31c.4.4.9.4 1.3 0c0 0 2-2.1 2.1-2.2l-8.6-8.9C2.3 19.9.3 22 .3 22"%2F%3E%3Cpath fill="%233e4347" d="m10.5 20.4l-3.7-3.8s1.2 2.1-2 2.5c-1.3.2-2.1.4-2.5.8l8.6 8.9c.4-.5.6-1.3.8-2.6c.4-3.3 2.4-2 2.4-2l-3.6-3.8M39.6 4.3C29.5-6 18.4 5.5 18.4 5.5l6.5 6.7s6.3-8.5 14.2-6.1c.9.3 1.7.7 2 .5c.4-.3-.8-1.6-1.5-2.3"%2F%3E%3Cpath fill="%23f2b200" d="m26 24.8l-3.6 3.7s1.9 3 5.1 6.3c3.5 3.6 8.2 5.7 12.9 10.5c7 7.2 12.8 15 14.9 17.9c.8 1.1.9 1 1.9 0l3-3.1L26 24.8"%2F%3E%3Cpath fill="%23ffce31" d="m26 24.8l3.6-3.7s2.9 1.9 6.1 5.2c3.5 3.6 5.5 8.5 10.2 13.3c7 7.2 14.5 13.2 17.4 15.4c1.1.8 1 1 0 2l-3 3.1L26 24.8"%2F%3E%3C%2Fsvg%3E')`;
-  let color = "#FCBA04";
+  let background = `url('data:image/svg+xml,%3Csvg xmlns="http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 31.87 32"%3E%3Cpath fill="%23009fb7" d="M.646 5.646c-.847.848-.666 2.042.008 2.715c.027.026 2.734 2.612 6.541 6.419a.498.498 0 0 0 .708 0a.5.5 0 0 0 0-.707c-.574-.574-1.12-1.117-1.638-1.631l1.589-1.589a.5.5 0 0 0-.707-.707l-1.593 1.593a498.15 498.15 0 0 0-2.315-2.271l3.615-3.615a.5.5 0 0 0-.707-.707L2.521 8.772c-.736-.713-1.16-1.118-1.167-1.125c-.211-.211-.488-.805 0-1.293l5-5c.193-.196.707-.585 1.271-.024c.025.028 2.55 2.896 6.404 6.75a.5.5 0 0 0 .707-.707C10.906 3.544 8.4.698 8.354.646c-.932-.93-2.056-.651-2.707 0l-5.001 5zm21.208 18.5a.5.5 0 0 0-.707 0l-1.591 1.59a350.22 350.22 0 0 0-1.53-1.541a.5.5 0 0 0-.707.707a295.59 295.59 0 0 1 6.328 6.509c.343.344.813.533 1.323.533c.525 0 1.056-.205 1.385-.535l4.998-5.057c.629-.629.665-1.696.078-2.285l-6.706-6.705a.5.5 0 0 0-.707.707l6.706 6.705c.2.2.162.632-.079.873l-4.999 5.057c-.115.116-.376.24-.676.24c-.172 0-.418-.042-.604-.229c-.01-.011-.429-.458-1.156-1.219l3.644-3.644a.5.5 0 0 0-.707-.707l-3.629 3.629a328.619 328.619 0 0 0-2.26-2.326l1.596-1.596a.5.5 0 0 0 0-.706zM.142 31.829a.5.5 0 0 0 .501.129l10-2.979a.49.49 0 0 0 .212-.127l17.09-17.205c.024-.024.036-.055.054-.082l3.656-3.656a1.552 1.552 0 0 0 0-2.203L26.42.472c-.588-.588-1.615-.588-2.203 0l-3.739 3.739c-.024.024-.037.055-.055.083L3.307 21.411a.495.495 0 0 0-.122.199l-3.16 9.715a.499.499 0 0 0 .117.504zM20.86 5.271l1.039 1.039L6.376 21.875l-1.727-.392L20.86 5.271zM7 22.666L22.607 7.018l2.436 2.436L9.295 25H7v-2.334zm19.884-11.37L10.64 27.65l-.577-2.002L25.75 10.161l1.134 1.135zM3.993 22.359L6 22.815V25.5a.5.5 0 0 0 .5.5h2.624l.634 2.2l-8.488 2.529l2.723-8.37zm20.932-21.18a.57.57 0 0 1 .789 0l5.235 5.235a.554.554 0 0 1-.001.789l-3.371 3.372l-6.023-6.023l3.371-3.373z"%2F%3E%3C%2Fsvg%3E')`;
+  let color = "#009FB7";
 
   const [counter, setCounter] = useState(0);
   const [ifZero, setIfZero] = useState(false);
@@ -47,19 +47,20 @@ function Projects() {
 
   return (
     <>
-      <DivSplit left="0" color={color}></DivSplit>
-      <DivSplit right="0">
-        {/* prettier-ignore */}
-        <Banner top="10vh" growth="10vw" className="projects-banner" justify="flex-end">
-          <p>02</p>
-        </Banner>
-        {/* prettier-ignore */}
+      <DivSplit left="0" color={color}>
         <Banner color="#080808" bottom="7vh" growth="3vw" className="projects-banner" justify="center">
           <p ref={bannerRef}>SELECT THE TOOL</p>
         </Banner>
       </DivSplit>
+      <DivSplit right="0">
+        {/* prettier-ignore */}
+        <Banner bottom="-3px" growth="7vw" className="projects-banner" justify="flex-start">
+          <p>02</p>
+        </Banner>
+        {/* prettier-ignore */}
+      </DivSplit>
       {/* prettier-ignore */}
-      <DivCenter maxWidth="500px" maxHeight="500px" backgroundColor="#080808" background={background} width="70vw" height="70vw" borderRadius="10%">
+      <DivCenter maxWidth="500px" maxHeight="500px" backgroundColor="#080808" background={background} width="60vw" height="60vw" borderRadius="10%">
         {rendered}
         <Button left="2%" color={color} onClick={toolRenderLeft}>
           {/* prettier-ignore */}

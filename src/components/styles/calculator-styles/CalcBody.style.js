@@ -7,7 +7,7 @@ const CalcBody = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 3px #fcba04 solid;
+  border: 3px #009FB7 solid;
   & .display-container {
     width: 90%;
     height: 40%;
@@ -40,6 +40,7 @@ const DisplayStyle = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #009FB7;
     word-break: break-all;
     font-size: clamp(0.7rem, 3vw, 1.5rem);
   }

@@ -4,7 +4,7 @@ const StyledButton = styled.div`
   width: 20%;
   height: 100%;
   color: white;
-  outline: 2px #fcba04 solid;
+  outline: 2px #009FB7 solid;
   outline-offset: -2px;
   text-align: center;
   border-radius: clamp(1px, 1.5vw, 10px);

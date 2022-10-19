@@ -38,13 +38,13 @@ const DivSplit = styled.div`
     height: 100%;
   }
   & .home-title {
-    width: 80%;
-    font-size: clamp(2rem, 6vw, 6rem);
+    width: 100%;
+    font-size: clamp(2rem, 5vw, 5rem);
   }
   & .about-description-container {
     text-align: start;
     color: #985c42;
-    font-size: clamp(0.4rem, 1vw, 2rem);
+    font-size: clamp(0.4rem, 1vw, 1.2rem);
     margin: auto 10%;
     @media (max-width: 1000px) {
       font-size: clamp(0.4rem, 1.5vw, 2rem);

@@ -8,7 +8,7 @@ function Contact() {
     <>
       <DivSplit color="#1aa14a" fontSize="5rem"></DivSplit>
       <DivSplit right="0">
-        <Banner top="10vh" growth="10vw" className="projects-banner" justify="flex-end" zIndex="2">
+        <Banner bottom="-3px" growth="7vw" className="projects-banner" justify="flex-start" >
           <p>03</p>
         </Banner>
       </DivSplit>

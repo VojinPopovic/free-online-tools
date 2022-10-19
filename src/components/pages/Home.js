@@ -7,13 +7,13 @@ function Home() {
     <>
       <DivSplit color="#EF626C"></DivSplit>
       <DivSplit right="0">
-        <Banner top="10vh" growth="10vw" className="projects-banner" justify="flex-end">
+        <Banner bottom="-3px" growth="7vw" className="projects-banner" justify="flex-start">
           <p>01</p>
         </Banner>
       </DivSplit>
-      <DivCenter width="45vw" height="40vw" minWidth="55vw" screenWidth="500px">
+      <DivCenter width="60vw" height="45vw" maxWidth="700px" screenWidth="700px">
         {/* prettier-ignore */}
-        <DivSplit textColor="#080808" alignItems="flex-start" justify="center">
+        <DivSplit textColor="#080808" alignItems="center" justify="center">
           <p className="home-title">Enjoy</p>
           <p className="home-title">Our</p>
           <p className="home-title">Tools</p>
