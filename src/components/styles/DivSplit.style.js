@@ -15,6 +15,9 @@ const DivSplit = styled.div`
   font-family: "Noto Serif HK", serif;
   overflow: visible;
   border: ${(props) => props.borderSize + props.borderColor} solid;
+  border-right: ${props => props.borderRight};
+  border-left: ${props => props.borderLeft};
+  border-radius: ${props => props.bRadius};
   position: relative;
   & .contact-container {
     width: 95%;

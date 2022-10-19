@@ -35,7 +35,7 @@ function NavMobile(props) {
   return (
     <>
       <NavLogo />
-      <UlContainer ref={ulRef} bColor="#080808">
+      <UlContainer ref={ulRef} bColor="rgba(0,0,0,0.95)">
         <HamburgerContainer
           ref={closeHamburgerRef}
           onClick={hamburgerClose}
