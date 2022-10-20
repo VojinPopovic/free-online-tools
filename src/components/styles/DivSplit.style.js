@@ -13,7 +13,7 @@ const DivSplit = styled.div`
   justify-content: ${(props) => props.justify};
   align-items: ${(props) => props.alignItems};
   font-family: "Noto Serif HK", serif;
-  overflow: visible;
+  overflow: hidden;
   border: ${(props) => props.borderSize + props.borderColor} solid;
   border-right: ${props => props.borderRight};
   border-left: ${props => props.borderLeft};
@@ -39,7 +39,7 @@ const DivSplit = styled.div`
   }
   & .home-title {
     width: 100%;
-    font-size: clamp(2rem, 5vw, 5rem);
+    font-size: clamp(2rem, 5.5vw, 5rem);
   }
   & .about-description-container {
     text-align: start;

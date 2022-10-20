@@ -8,8 +8,8 @@ function About() {
     <>
       <DivSplit color="#985c42" fontSize="5rem"></DivSplit>
       <DivSplit right="0">
-        <Banner bottom="-3px" growth="7vw" className="projects-banner" justify="flex-start" >
-          <p>04</p>
+        <Banner bottom="2px" className="projects-banner" justify="flex-start" >
+          <p className="page-number">04</p>
         </Banner>
       </DivSplit>
       <DivCenter

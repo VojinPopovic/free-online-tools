@@ -7,8 +7,8 @@ function Home() {
     <>
       <DivSplit color="#EF626C"></DivSplit>
       <DivSplit right="0">
-        <Banner bottom="-3px" growth="7vw" className="projects-banner" justify="flex-start">
-          <p>01</p>
+        <Banner bottom="2px" className="projects-banner" justify="flex-start" >
+          <p className="page-number">01</p>
         </Banner>
       </DivSplit>
       <DivCenter width="60vw" height="45vw" maxWidth="700px" screenWidth="700px">

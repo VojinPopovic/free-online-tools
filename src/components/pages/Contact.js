@@ -8,11 +8,11 @@ function Contact() {
     <>
       <DivSplit color="#1aa14a" fontSize="5rem"></DivSplit>
       <DivSplit right="0">
-        <Banner bottom="-3px" growth="7vw" className="projects-banner" justify="flex-start" >
-          <p>03</p>
+        <Banner bottom="2px" className="projects-banner" justify="flex-start" >
+          <p className="page-number">03</p>
         </Banner>
       </DivSplit>
-      <DivCenter color="#080808" width="100vw" height="40vw" screenWidth="900px" minHeight="50%">
+      <DivCenter color="#080808" width="100vw" height="40vw" screenWidth="900px" minHeight="50%" maxHeight="700px" maxWidth="1200px">
         <DivSplit size="1rem" alignItems="flex-start" justify="center">
           <div className="contact-container">
             <h2>Contact me</h2>

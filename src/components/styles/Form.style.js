@@ -10,7 +10,7 @@ const FormContact = styled.form`
   align-items: center;
   background-color: #080808;
   & div {
-    width: 75%;
+    width: 90%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@ const FormContact = styled.form`
       font-size: 1.2rem;
     }
     & input {
-      width: 70%;
+      width: 90%;
       height: 40px;
       @media (max-width: 1200px) {
         width: 100%;
@@ -39,14 +39,14 @@ const FormContact = styled.form`
       font-size: clamp(0.5rem, 2.5vw, 1rem);
     }
     & textarea {
-      width: 70%;
+      width: 90%;
       height: 100px;
       @media (max-width: 1200px) {
         width: 100%;
       }
     }
     & .submit-btn {
-      width: 40%;
+      width: 30%;
       height: 40px;
       color: #1aa14a;
     }

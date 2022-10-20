@@ -54,8 +54,8 @@ function Projects() {
       </DivSplit>
       <DivSplit right="0">
         {/* prettier-ignore */}
-        <Banner bottom="-3px" growth="7vw" className="projects-banner" justify="flex-start">
-          <p>02</p>
+        <Banner bottom="2px" className="projects-banner" justify="flex-start" >
+          <p className="page-number">02</p>
         </Banner>
         {/* prettier-ignore */}
       </DivSplit>

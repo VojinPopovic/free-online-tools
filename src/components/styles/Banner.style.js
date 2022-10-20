@@ -27,5 +27,8 @@ const Banner = styled.div`
       letter-spacing: ${(props) => props.ls};
     }
   }
+  & .page-number{
+    font-size: 2.5rem;
+  }
 `;
 export { Banner };
